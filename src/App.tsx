@@ -1,31 +1,25 @@
 import React from 'react';
+import 'core-js/es/symbol'
+import Carousel from 'flat-carousel';
 
 
-let slideIndex = 0;
-showSlides();
+const images = [
+  { src: 'some image' }
+];
 
-function showSlides() {
 
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[slideIndex-1].display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 export function App() {
   return (
     <div className="App">
-      <p>hi</p>
+      <Carousel>
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="demo-item"
+            style={{ backgroundImage: 'url(' + image.src + ')' }}
+          />
+        ))}
+      </Carousel>
     </div>
   );
 }
