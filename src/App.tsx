@@ -1,14 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
+import {ImageSlider} from "./components/ImageSlider";
 
 const AppDiv = styled.div`
   body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #1e1e1e;
+
   }
 `
 
@@ -16,11 +12,10 @@ const AppDiv = styled.div`
 export function App() {
   return (
     <AppDiv>
-      <body>
+
+        <ImageSlider  />;
 
 
-
-      </body>
     </AppDiv>
   );
 }
