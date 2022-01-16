@@ -16,17 +16,19 @@ const StyleHeaderDiv = styled.div`
     .links {
       width: 100%;
       width: 100%;
-      height: 100%;
       max-width: 800px;
       background: linear-gradient(to right, #cc0404, #d74646);
       display: flex;
       flex-flow: row nowrap;
-      justify-content: flex-start;
+      //justify-content: flex-start;
+      justify-content: space-evenly;
       align-items: center;
+      padding: 20px 10px;
+      margin-bottom: -15px;
+      
 
       .link {
-        margin: 10px;
-
+  
         height: 100%;
         line-height: 50px; // set line-height = height of container (50px) and this will vertically center text.
         white-space: nowrap;
@@ -35,12 +37,13 @@ const StyleHeaderDiv = styled.div`
         &:hover {
           border-bottom: 2px solid black;
         }
-
-        &:last-child {
-          margin-left: auto;
-          text-align: right;
-          text-wrap: none;
-        }
+        
+        // do this for bigger screens
+        //&:last-child {
+        //  margin-left: auto;
+        //  text-align: right;
+        //  text-wrap: none;
+        //}
       }
 
       .selected {
@@ -66,7 +69,7 @@ export const Header: FC  = (props) => {
           <a href="">Movies</a>
           <a href="">Critics</a>
           <a href="">Contact</a>
-          <a href="">profile</a>
+          <a href="">Profile</a>
         </div>
       </StyleHeaderDiv>
     );
