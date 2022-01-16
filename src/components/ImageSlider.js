@@ -3,6 +3,8 @@ import {SliderData} from "./SliderData";
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
 import styled from "styled-components";
 
+
+
 const ImageSliderDiv = styled.div`
   .slider {
     display: flex;
@@ -14,7 +16,7 @@ const ImageSliderDiv = styled.div`
   
   .image {
     width: 500px;
-    height: 600px;
+    height: 780px;
     border-radius: 10px;
   }
   
@@ -23,7 +25,7 @@ const ImageSliderDiv = styled.div`
     top: 50%;
     right: 32px;
     font-size: 3rem;
-    color: #000;
+    color: white;
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -35,7 +37,7 @@ const ImageSliderDiv = styled.div`
     top: 50%;
     left: 32px;
     font-size: 3rem;
-    color: #000;
+    color: white;
     
     z-index: 10;
     cursor: pointer;
@@ -52,8 +54,38 @@ const ImageSliderDiv = styled.div`
     transition-duration: 1s;
     transform: scale(1.08);
   }
-  
-  
+
+  @media screen and (min-width: 601px) {
+    .image {
+      width: 1000px;
+      height: 900px;
+      border-radius: 11px;
+    }
+    
+    @media screen and (min-width: 1100px) {
+      .image {
+        width: 1600px;
+        height: 1500px;
+        border-radius: 12px;
+      }
+    }
+
+    @media screen and (min-width: 1600px) {
+      .image {
+        width: 2000px;
+        height: 1555px;
+        border-radius: 13px;
+      }
+    }
+
+    @media screen and (min-width: 2100px) {
+      .image {
+        width: 3333px;
+        height: 1666px;
+        border-radius: 13px;
+      }
+    }
+    }
   
 `
 
