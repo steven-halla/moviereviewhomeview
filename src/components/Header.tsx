@@ -11,7 +11,7 @@ const StyleHeaderDiv = styled.div`
    
     font-size: 1.9em;
     font-family: "Noto Sans Old Italic";
-    height: 70px;
+    height: 50px;
     width: 100%;
     background: linear-gradient(to right, #cc0404, #d74646);
     color: white;
@@ -19,7 +19,7 @@ const StyleHeaderDiv = styled.div`
   
   .top-header {
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     padding: 0 0;
