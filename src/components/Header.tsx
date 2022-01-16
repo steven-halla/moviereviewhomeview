@@ -12,6 +12,8 @@ const StyleHeaderDiv = styled.div`
     justify-content: center;
     padding: 0 0;
     margin: 0 30px 0 0;
+    color: white;
+    
 
     .links {
       width: 100%;
@@ -25,13 +27,15 @@ const StyleHeaderDiv = styled.div`
       align-items: center;
       padding: 20px 10px;
       margin-bottom: -15px;
-      
+      color: white;
+
 
       .link {
   
         height: 100%;
         line-height: 50px; // set line-height = height of container (50px) and this will vertically center text.
         white-space: nowrap;
+        color: white;
 
 
         &:hover {
@@ -52,9 +56,14 @@ const StyleHeaderDiv = styled.div`
     }
 
     a,
-    a:visited,
-    a:hover {
+    a:visited
+ {    
+      font-size: 1.4em;
       text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      font-size: 1.8em;
       color: black;
     }
   }
@@ -68,7 +77,7 @@ export const Header: FC  = (props) => {
         <div className="links">
           <a href="">Movies</a>
           <a href="">Critics</a>
-          <a href="">Contact</a>
+          <a href="">Home</a>
           <a href="">Profile</a>
         </div>
       </StyleHeaderDiv>
