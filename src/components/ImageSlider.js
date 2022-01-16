@@ -18,7 +18,7 @@ const ImageSliderDiv = styled.div`
     border-radius: 10px;
   }
   
-  .rightArrow {
+  .right-arrow {
     position: absolute;
     top: 50%;
     right: 32px;
@@ -29,7 +29,7 @@ const ImageSliderDiv = styled.div`
     user-select: none;
   }
 
-  .leftArrow {
+  .left-arrow {
     position: absolute;
     top: 50%;
     left: 32px;
@@ -39,6 +39,19 @@ const ImageSliderDiv = styled.div`
     cursor: pointer;
     user-select: none;
   }
+  
+  .slide {
+    opacity: 0;
+    transition-duration: 1s ;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+  }
+  
+  
 `
 
 
@@ -66,12 +79,18 @@ export const ImageSlider = ({slides}) => {
   return (
     <ImageSliderDiv>
       <section className="slider">
-        <FaArrowAltCircleLeft className="left-arrow" />
-        <FaArrowAltCircleRight className="right-arrow" />
+        <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
+        <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
 
         {SliderData.map((slide, index) => {
-          return <img src={slide.image} alt="aliens" className="image"/>
 
+          return (
+              <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                {index === current && (
+                  <img src={slide.image} alt="aliens" className="image"/>
+                )}
+              </div>
+            )
         })};
       </section>
     </ImageSliderDiv>
