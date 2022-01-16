@@ -1,13 +1,10 @@
-
-import React from 'react'
 // import ReactDOM from 'react-dom'
 // import {ImageSlider} from "./ImageSlider";
 
 
+import {SliderImage} from "./ImageSlider";
 
-
-
-export const SliderData = [
+export const SliderData: SliderImage[] = [
   {
     image: 'https://cdn.mos.cms.futurecdn.net/isNjbTGFgJPqhXEa6RxLcZ.jpg'
   },
@@ -17,7 +14,7 @@ export const SliderData = [
   {
     image: 'https://www.avpcentral.com/images/colonial-marine-teams/uss-sulaco-colonial-marines.jpg'
   }
-  ]
+];
 
 // ReactDOM.render(
 //   <ImageSlider slides={SliderData} autoPlay={3} />,
