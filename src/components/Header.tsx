@@ -1,26 +1,42 @@
-import React, {FC, useContext} from 'react';
+import React, {FC} from 'react';
 
 import styled from "styled-components";
 
-import clsx from "clsx";
-
 const StyleHeaderDiv = styled.div`
+
+  .title {
+    height: 70px;
+    width: 100%;
+    background-color: red;
+  }
   
+  .links {
+    height: 80px;
+    width: 100%;
+    background-color: skyblue;
+  }
 `;
 
-export const Header: FC  = (props) => {
+export const Header: FC = (props) => {
 
 
-    return (
-      <StyleHeaderDiv className="top-header">
+  return (
+    <StyleHeaderDiv>
+      <div className="title">
+        <p>Tom Rotten</p>
+      </div>
+      <div className="links">
+        <a href="">Movies</a>
+        <a href="">Critics</a>
+        <a href="">Home</a>
+        <a href="">Profile</a>
+      </div>
 
 
-
-      </StyleHeaderDiv>
-    );
+    </StyleHeaderDiv>
+  );
 
 }
-
 
 
 // export const Header: FC  = (props) => {
