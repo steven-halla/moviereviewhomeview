@@ -13,7 +13,7 @@ const ImageSliderDiv = styled.div`
   }
   
   .image {
-    width: 1000px;
+    width: 500px;
     height: 600px;
     border-radius: 10px;
   }
@@ -30,11 +30,13 @@ const ImageSliderDiv = styled.div`
   }
 
   .left-arrow {
+
     position: absolute;
     top: 50%;
     left: 32px;
     font-size: 3rem;
     color: #000;
+    
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -50,6 +52,7 @@ const ImageSliderDiv = styled.div`
     transition-duration: 1s;
     transform: scale(1.08);
   }
+  
   
   
 `
