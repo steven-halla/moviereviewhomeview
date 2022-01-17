@@ -11,7 +11,7 @@ const StyleHeaderDiv = styled.div`
    
     font-size: 1.9em;
     font-family: "Noto Sans Old Italic";
-    height: 50px;
+    height: 60px;
     width: 100%;
     background: linear-gradient(to right, #cc0404, #d74646);
     color: white;
