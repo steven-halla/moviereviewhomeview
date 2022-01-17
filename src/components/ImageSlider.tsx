@@ -15,8 +15,8 @@ const StyledImageSlider = styled.div`
 
   .image {
 
-    width: 500px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
   }
 

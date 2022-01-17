@@ -5,10 +5,10 @@ import {ImageSlider} from "./components/ImageSlider";
 import {SliderData} from "./components/SliderData";
 import {Header} from "./components/Header";
 import {HomeReview} from "./components/homeReview";
-//
-// const AppDiv = styled.div`
-//
-// `
+
+const AppDiv = styled.div`
+
+`
 
 
 export function App() {
