@@ -5,6 +5,7 @@ import {ImageSlider} from "./components/ImageSlider";
 import {SliderData} from "./components/SliderData";
 import {Header} from "./components/Header";
 import {HomeReview} from "./components/homeReview";
+import {Footer} from "./components/footer";
 
 const AppDiv = styled.div`
 
@@ -17,6 +18,7 @@ export function App() {
         <Header/>
         <ImageSlider slides={SliderData}  />
       <HomeReview />
+      <Footer/>
 
 
     </div>
