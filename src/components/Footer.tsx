@@ -5,29 +5,63 @@ import styled from "styled-components";
 const StyleFooterDiv = styled.div`
     
   .Footer-Container {
-    height: 209px;
+    height: 111px;
     width: auto;
     background-color: skyblue;
+    
+    .Social-Media-Container {
+      display: flex;
+      margin: 0 auto;
+      flex-flow: row;
+      justify-content: space-evenly;
+      height: 100px;
+      width: 222px;
+      background-color: lightgray;
+
+      img {
+        display: flex;
+
+        height: 35px;
+        width: auto;
+      }
+    }
+    
   }
   
-  .Social-Media-Container {
+  
+  .Contact-Info-Container {
     display: flex;
-    margin: 0 auto;
-    flex-flow: row;
-    justify-content: space-evenly;
-    height: 155px;
-    width: 222px;
-    background-color: lightgray;
+    border: solid 1px;
+   
+    width: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: yellow;
+   
     
-    img {
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    
+    .contact-info {
       display: flex;
-
-      height: 35px;
-      width: auto;
+      flex-flow: row nowrap;
+      justify-content: center;
+      width: 100%;
+      
+      .contact-method {
+        margin-right: 15px;
+      }
+      .contact-value {
+        padding-right: 15px;
+      }
     }
   }
   
-  `
+`;
 
 export const Footer: FC = (props) => {
       return(
@@ -50,9 +84,22 @@ export const Footer: FC = (props) => {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEgxnwMTT4WrNoXdjQlJZE4Vxj1Gnd8v1OGg&usqp=CAU&ec=45761791"
                   height="60" width="60" alt=""/></a></p>
               </div>
+
           </div>
 
+          <div className="Contact-Info-Container">
+            <div className="title">Contact Us</div>
 
+            <div className="contact-info">
+                <div className="contact-method">Phone:</div>
+                <div className="contact-value">(123)456-7890</div>
+
+            </div>
+            <div className="contact-info">
+              <div className="contact-method">Email:</div>
+              <div className="contact-value">contactus@tomrotten.com</div>
+            </div>
+          </div>
         </StyleFooterDiv>
       )
 }

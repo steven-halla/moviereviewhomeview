@@ -5,7 +5,7 @@ import {ImageSlider} from "./components/ImageSlider";
 import {SliderData} from "./components/SliderData";
 import {Header} from "./components/Header";
 import {HomeReview} from "./components/homeReview";
-import {Footer} from "./components/footer";
+import {Footer} from "./components/Footer";
 
 const AppDiv = styled.div`
 
