@@ -11,13 +11,18 @@ const StyleFooterDiv = styled.div`
   }
   
   .Social-Media-Container {
-
+    display: flex;
+    margin: 0 auto;
+    flex-flow: row;
+    justify-content: space-evenly;
     height: 155px;
     width: 222px;
     background-color: lightgray;
     
     img {
-      height: 30px;
+      display: flex;
+
+      height: 35px;
       width: auto;
     }
   }
@@ -31,7 +36,7 @@ export const Footer: FC = (props) => {
 
           <div className="Footer-Container">
               <div className="Social-Media-Container">
-                <h2>Like what you see? Connect with us on Social media!</h2>
+                {/*<h2>Like what you see? Connect with us on Social media!</h2>*/}
                 <p><a href="https://www.facebook.com/" target="_blank"><img
                   src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png" height="60"
                   width="60" alt=""/></a></p>
