@@ -8,7 +8,8 @@ const StyleHeaderDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-   
+    z-index: 1;
+    position: fixed;
     font-size: 1.9em;
     font-family: "Noto Sans Old Italic";
     height: 60px;
@@ -18,6 +19,8 @@ const StyleHeaderDiv = styled.div`
   }
   
   .top-header {
+    z-index: 1;
+    position: fixed;
     width: 100%;
     height: 80px;
     display: flex;
@@ -25,13 +28,11 @@ const StyleHeaderDiv = styled.div`
     padding: 0 0;
     margin: 0 30px 0 0;
     color: white;
-
-
-
-
+    
     .links {
+      z-index: 1;
+      position: fixed;
       width: 100%;
-
       max-width: 800px;
       background: linear-gradient(to right, #cc0404, #d74646);
       display: flex;
@@ -44,15 +45,12 @@ const StyleHeaderDiv = styled.div`
       color: white;
 
       p {
-
         font-size: 50px;
         padding-bottom: 25px;
         flex-direction: column;
       }
-
-
+      
       .link {
-
         height: 100%;
         line-height: 50px; // set line-height = height of container (50px) and this will vertically center text.
         white-space: nowrap;
