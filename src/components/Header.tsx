@@ -101,6 +101,7 @@ export const Header: FC = (props) => {
           <a href="">Critics</a>
           <a href="">Home</a>
           <a href="">Profile</a>
+
         </div>
 
       </div>
