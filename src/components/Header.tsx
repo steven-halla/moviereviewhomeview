@@ -10,12 +10,28 @@ const StyleHeaderDiv = styled.div`
     width: 100%;
     
     .title {
-      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 55px;
+      font-size: 1.9em;
+      font-family: "Noto Sans Old Italic";
+      background: linear-gradient(to right, #cc0404, #d74646);
+      color: white;
       width: 100%;
+      
     }
     
     .links {
-      background-color: purple;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      height: 22px;
+      margin-bottom: -15px;
+      color: white;
+      font-size: 1em;
+      background: linear-gradient(to right, #cc0404, #d74646);
       width: 100%;
       
     }
@@ -29,7 +45,6 @@ export const Header: FC = (props) => {
   return (
     <StyleHeaderDiv>
       <div className="header-container">
-        <p>Hi I am the header container</p>
         <div className="title">
           <p>Tom Rotten</p>
         </div>
