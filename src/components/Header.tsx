@@ -5,10 +5,21 @@ import styled from "styled-components";
 const StyleHeaderDiv = styled.div`
   .header-container {
     background-color: blue;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
     
     .title {
       background-color: red;
+      width: 100%;
     }
+    
+    .links {
+      background-color: purple;
+      width: 100%;
+      
+    }
+    
   }
   
 `;
@@ -21,6 +32,12 @@ export const Header: FC = (props) => {
         <p>Hi I am the header container</p>
         <div className="title">
           <p>Tom Rotten</p>
+        </div>
+        <div className="links">
+          <p>Movies</p>
+          <p>Log out</p>
+          <p>Profile</p>
+          <p>Home</p>
         </div>
       </div>
 
