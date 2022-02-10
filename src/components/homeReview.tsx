@@ -9,6 +9,7 @@ const StyleHeaderDiv = styled.div`
     img {
       width: 98%;
       height: auto;
+      padding-top: 5px;
     }
     
    
@@ -26,6 +27,8 @@ const StyleHeaderDiv = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    padding-left: 4px;
   }
 `
 

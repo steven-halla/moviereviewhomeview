@@ -4,12 +4,16 @@ import styled from "styled-components";
 
 const StyleHeaderDiv = styled.div`
   .header-container {
-    background-color: blue;
-    z-index: 10;
+    z-index: 5;
     position: fixed;
     width: 100%;
-    
+    background: linear-gradient(to right, #cc0404, #d74646);
+    height: auto;
+
+
     .title {
+      z-index: 5;
+
       display: flex;
       align-items: center;
       justify-content: center;
@@ -23,6 +27,8 @@ const StyleHeaderDiv = styled.div`
     }
     
     .links {
+      z-index: 5;
+
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-evenly;
