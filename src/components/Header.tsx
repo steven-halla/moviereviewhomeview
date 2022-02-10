@@ -6,9 +6,10 @@ const StyleHeaderDiv = styled.div`
   .header-container {
     z-index: 5;
     position: fixed;
-    width: 100%;
+    width: 98%;
     background: linear-gradient(to right, #cc0404, #d74646);
     height: auto;
+    padding-top: 10px;
 
 
     .title {
@@ -24,6 +25,8 @@ const StyleHeaderDiv = styled.div`
       color: white;
       width: 100%;
       
+      
+      
     }
     
     .links {
@@ -38,7 +41,7 @@ const StyleHeaderDiv = styled.div`
       color: white;
       font-size: 1em;
       background: linear-gradient(to right, #cc0404, #d74646);
-      width: 100%;
+      width: 97%;
       
     }
     

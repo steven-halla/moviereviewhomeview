@@ -15,9 +15,8 @@ const StyledImageSlider = styled.div`
 
   .image {
 
-    width: 98%;
+    width: 93%;
     height: auto;
-    border-radius: 10px;
   }
 
   .right-arrow {

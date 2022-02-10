@@ -7,7 +7,6 @@ const StyleFooterDiv = styled.div`
   .Footer-Container {
     height: 111px;
     width: auto;
-    background-color: skyblue;
     
     .Social-Media-Container {
       display: flex;
@@ -16,7 +15,6 @@ const StyleFooterDiv = styled.div`
       justify-content: space-evenly;
       height: 100px;
       width: 222px;
-      background-color: lightgray;
 
       img {
         display: flex;
@@ -31,14 +29,11 @@ const StyleFooterDiv = styled.div`
   
   .Contact-Info-Container {
     display: flex;
-    border: solid 1px;
-   
     width: auto;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    background-color: yellow;
    
     
     .title {
@@ -70,7 +65,6 @@ export const Footer: FC = (props) => {
 
           <div className="Footer-Container">
               <div className="Social-Media-Container">
-                {/*<h2>Like what you see? Connect with us on Social media!</h2>*/}
                 <p><a href="https://www.facebook.com/" target="_blank"><img
                   src="https://cdn1.iconfinder.com/data/icons/logotypes/32/square-facebook-512.png" height="60"
                   width="60" alt=""/></a></p>
