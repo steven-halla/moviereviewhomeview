@@ -11,13 +11,12 @@ const StyledImageSlider = styled.div`
     height: 50vh;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
   }
 
   .image {
-
     width: 100%;
-    height: auto;
-    margin-top: 25px;
+    height: 28vh;
   }
 
   .right-arrow {
