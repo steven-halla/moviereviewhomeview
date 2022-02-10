@@ -15,8 +15,9 @@ const StyledImageSlider = styled.div`
 
   .image {
 
-    width: 93%;
+    width: 100%;
     height: auto;
+    margin-top: 25px;
   }
 
   .right-arrow {
@@ -58,11 +59,7 @@ const StyledImageSlider = styled.div`
 
   
     @media screen and (min-width: 2100px), (min-height: 1600px) {
-      .image {
-        width: 1111px;
-        height: 1000px;
-        border-radius: 13px;
-      }
+      
     }
   
 `;

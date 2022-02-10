@@ -6,7 +6,7 @@ const StyleHeaderDiv = styled.div`
   .header-container {
     z-index: 5;
     position: fixed;
-    width: 98%;
+    width: 100%;
     background: linear-gradient(to right, #cc0404, #d74646);
     height: auto;
     padding-top: 10px;
@@ -24,24 +24,20 @@ const StyleHeaderDiv = styled.div`
       background: linear-gradient(to right, #cc0404, #d74646);
       color: white;
       width: 100%;
-      
-      
-      
     }
     
     .links {
       z-index: 5;
-
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-evenly;
       align-items: center;
       height: 22px;
-      margin-bottom: -15px;
+      padding-bottom: -15px;
       color: white;
       font-size: 1em;
       background: linear-gradient(to right, #cc0404, #d74646);
-      width: 97%;
+      width: 100%;
       
     }
     
