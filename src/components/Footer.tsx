@@ -3,6 +3,10 @@ import React, {FC} from 'react';
 import styled from "styled-components";
 
 const StyleFooterDiv = styled.div`
+
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
     
   .Footer-Container {
     height: 111px;

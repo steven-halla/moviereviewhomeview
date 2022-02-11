@@ -3,6 +3,11 @@ import React, {FC} from 'react';
 import styled from "styled-components";
 
 const StyleHeaderDiv = styled.div`
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
   .header-container {
     z-index: 5;
     position: fixed;

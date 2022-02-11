@@ -3,8 +3,12 @@ import styled from "styled-components";
 import {FaArrowAltCircleLeft, FaArrowAltCircleRight} from "react-icons/fa";
 import {SliderData} from "./SliderData";
 
-
 const StyledImageSlider = styled.div`
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
   .slider {
     display: flex;
     position: relative;
@@ -12,8 +16,6 @@ const StyledImageSlider = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 15px;
-    
-    
   }
 
   .image {
@@ -24,13 +26,11 @@ const StyledImageSlider = styled.div`
   @media screen and (min-width: 600px){
     .image {
      display: flex;
-      
       width: 95%;
       height: auto;
       max-height: 440px;
-      padding: 86px 1px 1px 40px;
-      margin: 30px 1px 1px 1px
-      
+      padding: 1px 1px 1px 40px;
+      margin: 1px 1px 1px 1px
     }
   }
 
@@ -116,7 +116,7 @@ export const ImageSlider: FC<ImageSliderProps> = (props) => {
               )}
             </div>
           )
-        })};
+        })}
       </section>
     </StyledImageSlider>
   );
