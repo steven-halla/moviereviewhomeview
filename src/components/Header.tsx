@@ -10,6 +10,8 @@ const StyleHeaderDiv = styled.div`
     background: linear-gradient(to right, #cc0404, #d74646);
     height: auto;
     padding-top: 10px;
+    box-sizing: border-box;
+
 
 
     .title {
@@ -40,6 +42,10 @@ const StyleHeaderDiv = styled.div`
       width: 100%;
       
     }
+    
+  }
+
+  @media screen and (min-width: 600px){
     
   }
   

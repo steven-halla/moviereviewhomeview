@@ -12,12 +12,29 @@ const StyledImageSlider = styled.div`
     justify-content: center;
     align-items: center;
     padding-top: 15px;
+    
+    
   }
 
   .image {
     width: 100%;
     height: 28vh;
   }
+
+  @media screen and (min-width: 600px){
+    .image {
+     display: flex;
+      
+      width: 95%;
+      height: auto;
+      max-height: 440px;
+      padding: 86px 1px 1px 40px;
+      margin: 30px 1px 1px 1px
+      
+    }
+  }
+
+
 
   .right-arrow {
     position: absolute;
@@ -31,13 +48,11 @@ const StyledImageSlider = styled.div`
   }
 
   .left-arrow {
-
     position: absolute;
     top: 50%;
     left: 32px;
     font-size: 3rem;
     color: white;
-
     z-index: 10;
     cursor: pointer;
     user-select: none;
@@ -54,12 +69,8 @@ const StyledImageSlider = styled.div`
     transform: scale(1.08);
   }
 
-
-
   
-    @media screen and (min-width: 2100px), (min-height: 1600px) {
-      
-    }
+
   
 `;
 

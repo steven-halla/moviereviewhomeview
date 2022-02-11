@@ -10,6 +10,15 @@ const StyleHeaderDiv = styled.div`
       height: auto;
       padding-top: 15px;
     }
+    @media screen and (min-width: 600px){
+      img {
+        width: 90%;
+        margin-left: 30px;
+      }
+    }
+    
+    
+    
     
   }
 
@@ -32,6 +41,8 @@ const StyleHeaderDiv = styled.div`
   .home-signup-link {
     padding-left: 1.5em;
   }
+
+
 `
 
 export const HomeReview: FC = (props) => {
@@ -49,6 +60,7 @@ return (
     </div>
 
     <div className="site-about">
+      <p>By: bob_hates_good_movies</p>
       <p>"I am not a fan of this movie. The death of the giant bug was the same as the 1st movie. Nightmare fuel."</p>
 
       <p>Tom Rotten is a movie review website that is made for people that don't want to shift through pages upon pages of reviews.</p>
