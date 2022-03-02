@@ -30,13 +30,14 @@ const StyleHeaderDiv = styled.div`
     align-items: center;
   }
   
-  .site-about {
+  .example-review {
     display: flex;
+    width: auto;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
-    width: 90%;
-    padding-left: 5px;
+    margin: 5px;
   }
   
   .home-signup-link {
@@ -58,7 +59,7 @@ return (
       <img src="http://robf.com.au/wp-content/uploads/2011/12/Aliens-A2S3-Briefing.png" alt="aliens"/>
     </div>
 
-    <div className="site-about">
+    <div className="example-review">
       <p>By: bob_hates_good_movies</p>
       <p>"I am not a fan of this movie. The death of the giant bug was the same as the 1st movie. Nightmare fuel."</p>
       <p>Tom Rotten is a movie review website that is made for people that don't want to shift through pages upon pages of reviews.</p>
