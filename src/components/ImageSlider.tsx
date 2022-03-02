@@ -6,6 +6,7 @@ import {SliderData} from "./SliderData";
 const StyledImageSlider = styled.div`
   
   *, *:before, *:after {
+    overflow-x: hidden;
     box-sizing: border-box;
   }
   
@@ -15,7 +16,7 @@ const StyledImageSlider = styled.div`
     height: 50vh;
     justify-content: center;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 35px;
   }
 
   .image {
@@ -23,40 +24,36 @@ const StyledImageSlider = styled.div`
     height: 28vh;
   }
 
-  @media screen and (min-width: 600px){
-    .image {
-     display: flex;
-      width: 95%;
-      height: auto;
-      max-height: 440px;
-      padding: 1px 1px 1px 40px;
-      margin: 1px 1px 1px 1px
-    }
-  }
-
-
-
+  
+  
   .right-arrow {
     position: absolute;
     top: 50%;
-    right: 32px;
+    right: 0;
+    left: 335px;
+    margin: 0 auto;
     font-size: 3rem;
     color: white;
     z-index: 10;
     cursor: pointer;
     user-select: none;
   }
-
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: white;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-  }
+ 
+  
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 335px;
+      margin: 0 auto;
+      font-size: 3rem;
+      color: white;
+      z-index: 10;
+      cursor: pointer;
+      user-select: none;
+    }
+  
+  
 
   .slide {
     opacity: 0;
