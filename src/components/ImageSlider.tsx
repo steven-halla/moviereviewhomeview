@@ -24,6 +24,19 @@ const StyledImageSlider = styled.div`
     height: 28vh;
   }
 
+  @media screen and (min-width: 800px){
+    .image {
+      width: 654px;
+    }
+  }
+
+  @media screen and (min-width: 1200px){
+    .image {
+      width: 888px;
+    }
+  }
+  
+
   
   
   .right-arrow {
@@ -34,9 +47,38 @@ const StyledImageSlider = styled.div`
     margin: 0 auto;
     font-size: 3rem;
     color: white;
-    z-index: 10;
+    z-index: 4;
     cursor: pointer;
     user-select: none;
+  }
+  @media screen and (min-width: 800px){
+    .right-arrow {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 435px;
+      margin: 0 auto;
+      font-size: 3rem;
+      color: white;
+      z-index: 4;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px){
+    .right-arrow {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      left: 535px;
+      margin: 0 auto;
+      font-size: 3rem;
+      color: white;
+      z-index: 4;
+      cursor: pointer;
+      user-select: none;
+    }
   }
  
   
@@ -48,12 +90,40 @@ const StyledImageSlider = styled.div`
       margin: 0 auto;
       font-size: 3rem;
       color: white;
-      z-index: 10;
+      z-index: 4;
       cursor: pointer;
       user-select: none;
     }
-  
-  
+  @media screen and (min-width: 800px){
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 435px;
+      margin: 0 auto;
+      font-size: 3rem;
+      color: white;
+      z-index: 4;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    .left-arrow {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 535px;
+      margin: 0 auto;
+      font-size: 3rem;
+      color: white;
+      z-index: 4;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+
+
 
   .slide {
     opacity: 0;
