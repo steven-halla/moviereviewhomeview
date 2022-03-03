@@ -18,6 +18,16 @@ const StyledImageSlider = styled.div`
     align-items: center;
     padding-top: 35px;
   }
+  @media screen and (min-width: 800px){
+    .slider {
+      padding-top: 55px;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    .slider {
+      padding-top: 75px;
+    }
+  }
 
   .image {
     width: 100%;
